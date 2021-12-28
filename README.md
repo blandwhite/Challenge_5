@@ -37,6 +37,10 @@ Python libraries used:
     *Requests is an elegant and simple HTTP library for Python, built for human beings.*
  - JSON: [https://www.json.org/json-en.html](https://www.json.org/json-en.html)  
      *JSON is a lightweight data-interchange format.*
+ - OS: [https://www.educba.com/python-os-module/](https://www.educba.com/python-os-module/)
+     *Python’s OS Module works as an interface between the Python Programming Language and the Host Operating System.*
+ - alpaca-trade-api-python: [https://pypi.org/project/alpaca-trade-api/](https://pypi.org/project/alpaca-trade-api/)
+     *alpaca-trade-api-python is a python library for the Alpaca Commission Free Trading API. It allows rapid trading algo development easily, with support for both REST and streaming data interfaces.*
 
 ### Installation Guide
 
@@ -44,13 +48,18 @@ prior to running these libraries, install them from the command line:
   - pandas: `conda install pandas` or `pip install pandas`  
   - pathlib: `pip install pathlib`
   - requests: `python -m pip install requests`
+  - alpaca-trade-api: `pip install alpaca-trade-api`
   
 ---
 
 ## Usage
 
 #### Our Jupyter Notebook will be useful in answering the following questions:
-
+ 1. What is the composition of the Savings Portfolio?
+ 
+ ![](Images/savings_pie_chart.png)
+ 
+ 
 
 ---
 ### Contributors

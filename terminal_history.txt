@@ -1,0 +1,14 @@
+    1  cd desk
+    2  cd Desktop/
+    3  cd Mod_5/Challenge_5/
+    4  ls
+    5  git clone https://github.com/blandwhite/Challenge_5.git
+    6  ls
+    7  cd Challenge_5/
+    8  ls
+    9  git status
+   10  git add . .
+   11  git status
+   12  git commit -m "Initial commit of code. Crypto section complete"
+   13  git push
+   14  history 25 > terminal_history.txt
