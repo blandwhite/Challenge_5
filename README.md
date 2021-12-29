@@ -55,10 +55,33 @@ prior to running these libraries, install them from the command line:
 ## Usage
 
 #### Our Jupyter Notebook will be useful in answering the following questions:
- 1. What is the composition of the Savings Portfolio?
+ 1. What is the composition of the Savings Portfolio?  
+ 
+     *Results may vary based on realtime data*
  
  ![](Images/savings_pie_chart.png)
  
+ 2. Credit Union members will be able to evaluate whether their emergency savings would be enough to cover 3 months' worth of income, as seen in the following snippet of code and the resulting determination:
+ ```python
+ # Evaluate the possibility of creating an emergency fund with 3 conditions:
+if total_portfolio > emergency_fund_value:
+        print("Congratulations! You have more than 3 months' worth of income in your emergency fund.")
+elif total_portfolio == emergency_fund_value:
+        print("Congratulations! You have saved 3 months' worth of income in your emergency fund.")
+else:
+        print(f"You are ${emergency_fund_value - total_portfolio:.2f} away from reaching your emergency fund goal.")
+```
+     - in our case, the member's emergency fund was sufficient, fetching this message:  
+ `Congratulations! You have more than 3 months' worth of income in your emergency fund.`
+ 
+ 3. In the "Financial Planner for Retirement" section, we evaluated the possibility of retiring in 30 years vs 10 years.
+     - When we ran the 30-year scenario, our resulting confidence interval produced the following statement:  
+     `There is a 95% chance that your current balance of $75,353.70 over the next 30 years will end within the range of $1,509,005.29 and $29,820,490.96.`
+ 
+    - When we ran the 10-year scenario, our confidence interval produced the following:  
+     `There is a 95% chance that your current balance of $75,353.70 over the next 10 years will end within the range of $151,070.06 and $1,495,079.89.`  
+     
+ 4. Based on the results between 30-year and 10-year, it would appear more prudent to plan on retiring closer to the 30 year mark vs the 10 year mark.
  
 
 ---
